@@ -32,7 +32,7 @@ import java.util.Scanner;
             String planet = (scanner.nextLine()).toUpperCase();
 
             System.out.println("What mass do you have?");
-            Scanner scanner1 = new Scanner(System.in);
+           //Scanner scanner1 = new Scanner(System.in);
             double mass = scanner1.nextDouble();
 
             if (planet.equals("MERCURY"))    {
