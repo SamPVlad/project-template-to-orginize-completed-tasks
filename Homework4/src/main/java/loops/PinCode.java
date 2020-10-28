@@ -18,9 +18,11 @@ public class PinCode {
 
         do {
             
-            System.out.println("Wrong. Try again!");
-            int entryCode = keyboard.nextInt();
-            isPinCodeCorrect = (pinCode == entryCode) ? false: true;
+                System.out.println(keyboard.getClass().getSimpleName());
+                System.out.println("Wrong. Try again!");
+                int entryCode = keyboard.nextInt();
+                isPinCodeCorrect = (pinCode == entryCode) ? false : true;
+            
 
         } while (isPinCodeCorrect);
         System.out.println("Thank you!");

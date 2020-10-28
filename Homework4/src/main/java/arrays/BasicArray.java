@@ -13,7 +13,7 @@ class BasicArray {
         int[][] table = new int[100][100];
         int i, j = 0;
 
-        for (i = 0; i < 1000; i++) {
+        for (i = 0; i < 100; i++) {
 
             for (j = 0; j < 100; j++) {
                 table[i][j] = (int) ( Math.random() * 100 );
