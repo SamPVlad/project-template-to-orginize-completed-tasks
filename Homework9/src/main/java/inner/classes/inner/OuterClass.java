@@ -23,7 +23,7 @@ public class OuterClass {
             '}';
     }
 
-    class InnerClass {
+    public class InnerClass {
         InnerClass() {
             field1 = "field1 from InnerClass";
         }// add some members here
@@ -31,23 +31,16 @@ public class OuterClass {
         public String getField1() {
             return field1;
         }
-
     }
-    
-    
     
     public static void main(String[] args) {
         
         OuterClass outerClass = new OuterClass("field1 from OuterClass");
         System.out.println(outerClass.toString());
         
-        //InnerClass innerClass = outerClass.new InnerClass(); ??????????? 
-        // Is this right and equal to this OuterClass.InnerClass innerClass = outerClass.new InnerClass();
         OuterClass.InnerClass innerClass = outerClass.new InnerClass();
         System.out.println(outerClass.toString());
         
         System.out.println(innerClass.getField1());
-        
-        // your code here
     }
 }

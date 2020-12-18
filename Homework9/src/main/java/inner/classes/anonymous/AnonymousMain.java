@@ -21,13 +21,10 @@ public class AnonymousMain {
         };
     }
     
-        
     public static void main(String[] args) {
 
         FoodCollector foodCollector = getFoodCollector();
         foodCollector.collectFood();
-        
-        
         
         Utensil utensil = new Utensil("fork", "It helps to eat food") {
             @Override

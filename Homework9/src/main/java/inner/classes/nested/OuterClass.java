@@ -54,19 +54,19 @@ public class OuterClass {
             System.out.println("getSumOfSaticFields " + staticField2 + getStaticField1());
             return staticField2 + getStaticField1();
         }
-        
-
-        // add some members here
     }
 
     public static void main(String[] args) {
         OuterClass outerClass1 = new OuterClass("f1");
         outerClass1.getField1();
 
+        //String innerClass2 = InnerClass.getSumOfSaticFields();
+        
         OuterClass.InnerClass innerClass1 = new OuterClass.InnerClass("f2");
         innerClass1.getField2();
-
 
         OuterClass.InnerClass.getSumOfSaticFields();
     }
 }
+
+
