@@ -1,0 +1,75 @@
+1. img[src = "http://automationpractice.com/modules/blockbanner/img/sale70.png"]
+   //img[@class = 'img-responsive']
+
+2. span.shop-phone strong
+   //span[@class="shop-phone"]//text()[3]
+
+3. ????????????????????????????
+   //span[@class="shop-phone"]//text()[2]
+
+4. div#contact-link > a
+   //div[@id="contact-link"]/a
+
+5. a.login
+   //a[@class="login"]
+
+6. a[title="View my shopping cart"] > b
+   //a[@title = "View my shopping cart"]
+
+7. button[name = "submit_search"]
+   //button[@name = "submit_search"]
+
+8. input#search_query_top
+   //input[@id = "search_query_top"]
+
+9. a[title="Women"]
+   //a[@title="Women"]
+
+10. #block_top_menu > ul > li:nth-child(2) > a
+     //*[@id="block_top_menu"]/ul/li[2]/a
+
+11. #block_top_menu > ul > li:nth-child(3) > a
+    //*[@id="block_top_menu"]/ul/li[3]/a
+
+12. .icon-home
+    //i[@class='icon-home']
+
+13. .navigation_page
+    //span[@class='navigation_page']
+
+14. .page-heading
+    //h1[@class = 'page-heading']
+
+15. #create-account_form > h3
+   //h3[@class='page-subheading'][text() ='Create an account']
+
+16. #login_form > h3
+    //h3[@class='page-subheading'][text() ='Already registered?']
+
+17. button#SubmitCreate
+    //button[@id = 'SubmitCreate']
+
+18. //input[@id = 'email_create']
+    input#email_create
+
+19. label[for = "email_create"]
+    //label[@for = "email_create"]
+
+20. button#SubmitLogin
+    //button[@id = 'SubmitLogin']
+
+21. label[for = "email"]
+    //label[@for = "email"]
+
+22. input#email
+    //input[@id = 'email']
+
+23. input#passwd
+    //input[@id = 'passwd']
+
+24. label[for = "passwd"]
+    //label[@for = "passwd"]
+
+25. //a[text() ='Forgot your password?']
+    a[title ="Log in to your customer account"]
+
