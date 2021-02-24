@@ -13,6 +13,11 @@ public class ControllerAuthenticationPage {
         this.driver = driver;
     }
 
+    public ControllerAuthenticationPage openMainPage(){
+        this.driver.navigate().to(CONTROLLER_AUTHENTICATION_PAGE_URL);
+        return this;
+    }
+
     public void openControllerAuthenticationPage(){
         driver.navigate().to(CONTROLLER_AUTHENTICATION_PAGE_URL);
         System.out.println("openControllerAuthenticationPage");

@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 public class ShoppingCartSummaryPage {
     private WebDriver driver;
 
+    private static final String SHOPPING_CART_SUMMARY_PAGE ="";
+
     private By totalProductsPrice = By.id("total_product");
     private By totalShippingPrice = By.id("total_shipping");
     private By totalPriceWithoutTax = By.id("total_price_without_tax");
@@ -17,6 +19,11 @@ public class ShoppingCartSummaryPage {
 
     public ShoppingCartSummaryPage(WebDriver driver) {
         this.driver = driver;
+    }
+
+    public ShoppingCartSummaryPage openMainPage(){
+        this.driver.navigate().to(SHOPPING_CART_SUMMARY_PAGE);
+        return this;
     }
 
     public Double getTotalProductsPrice(){

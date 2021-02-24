@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 public class SearchPage {
     private WebDriver driver;
 
+    private static final String SEARCH_PAGE_URL ="http://";
+
     private By listButton = By.xpath("//a[@title =\"List\"]//i");
     private By listViewStyle = By.xpath("//*[@class=\"product_list row list\"]");
     private By gridViewStyle = By.xpath("//*[@class=\"product_list row grid\"]");
@@ -16,6 +18,11 @@ public class SearchPage {
 
     public SearchPage(WebDriver driver) {
         this.driver = driver;
+    }
+
+    public SearchPage openMainPage(){
+        this.driver.navigate().to(SEARCH_PAGE_URL);
+        return this;
     }
 
     public String cheackRequestedProductHeader(){
@@ -33,6 +40,11 @@ public class SearchPage {
     public void clickProceedToCheckoutButton(){
         driver.findElement(proceedToCheckoutButton).click();
     }
+
+//    public void clickProceedToCheckout() {
+//        new WebDriverWait(driver, 10).
+//                until(ExpectedConditions.visibilityOfElementLocated(proceedToCheckoutButton).click();
+//    }
 
     public String cheackListViewStyle(){
         return driver.findElement(listViewStyle).getText();
